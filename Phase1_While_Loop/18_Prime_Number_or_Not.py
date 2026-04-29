@@ -1,6 +1,6 @@
 # 18) Check whether the given number is a prime number.
 
-given_number = 4
+given_number = int(input("Enter a number that you want to check : "))
 
 divisor = 2
 
