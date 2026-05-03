@@ -8,3 +8,15 @@ while i < 11:
     print(f"{number} x {i} = {number * i}")
 
     i += 1
+
+
+## Optimized Solution
+
+number = 6
+limit = 10
+i = 1
+
+while i <= limit:
+    print(f"{number} x {i} = {number * i}")
+
+    i += 1
