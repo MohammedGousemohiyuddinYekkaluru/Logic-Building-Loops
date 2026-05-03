@@ -1,14 +1,25 @@
 # 6) Calculate and print the sum of the first n natural numbers.
 
-number = 5
+original_number = int(input("Enter a number : "))
 
-original_number = number
+temp = original_number
 
 total_sum = 0
 
-while number > 0:
-    total_sum += number
+while temp > 0:
+    total_sum += temp
 
-    number -= 1
+    temp -= 1
 
 print(f"The sum of {original_number} is {total_sum}")
+
+
+## Optimized Solution
+
+original_n_number = 10
+
+temp = original_n_number
+
+total_sum = original_n_number * (original_n_number + 1) // 2
+
+print(f"The sum of first {original_n_number} natural numbers is {total_sum}")
