@@ -1,8 +1,8 @@
 # 7) Calculate the sum of all even numbers from 1 up to n.
 
-n = 10
+original_n = 10
 
-original_n = n
+n = original_n
 
 total_sum = 0
 
