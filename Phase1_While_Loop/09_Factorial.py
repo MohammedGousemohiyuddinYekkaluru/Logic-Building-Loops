@@ -5,7 +5,7 @@ given_number = int(input("Enter a number : "))
 
 factorial = 1
 
-while given_number > 0:
+while given_number > 1:
     factorial *= given_number
 
     given_number -= 1
