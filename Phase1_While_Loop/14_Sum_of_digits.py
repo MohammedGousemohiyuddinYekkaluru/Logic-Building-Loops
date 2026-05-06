@@ -22,6 +22,13 @@ result_sum = 0
 
 while temp2:
     result_sum += temp2 % 10
-    result_sum //= 10
+    temp2 //= 10
 
 print(f"The sum of digits of the given number {original_num} is {result_sum}")
+
+
+## Using list comprehension
+
+sum_of_digits_2 = sum(int(digit) for digit in str(abs(original_num)))
+
+print(f"The sum of digits of the given number {original_num} is {sum_of_digits_2}")
