@@ -2,7 +2,7 @@
 
 ## Armstrong Number :- an integer that equals the sum of its own digits, each raised to the power of the total number of digits in the number.
 
-original_num = 153
+original_num = int(input("Enter a number : "))
 
 temp = original_num
 
@@ -40,3 +40,13 @@ if sum2 == original_num:
 
 else:
     print(f"Given number {original_num} is not an Armstrong number")
+
+
+### 2)
+
+s = str(original_num)
+n = len(s)
+
+isArmStrong = sum(int(d) ** n for d in s) == original_num
+
+print(isArmStrong)
