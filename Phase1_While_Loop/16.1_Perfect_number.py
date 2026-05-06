@@ -19,3 +19,22 @@ if sum(proper_divisors) == original_num:
 
 else:
     print(f"Given number {original_num} is not a Perfect number")
+
+
+## Optimized Solution
+
+temp2 = original_num // 2
+
+divisor_sum = 0
+
+while temp2 > 0:
+    if original_num % temp2 == 0:
+        divisor_sum += temp2
+    
+    temp2 -= 1
+
+if divisor_sum == original_num:
+    print(f"Given number {original_num} is a Perfect number")
+
+else:
+    print(f"Given number {original_num} is not a Perfect number")
