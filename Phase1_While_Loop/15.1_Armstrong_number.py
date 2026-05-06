@@ -18,3 +18,25 @@ if total_sum == original_num:
 
 else:
     print(f"Given number {original_num} is not an Armstrong number")
+
+
+## Optimized Solution
+
+### 1)
+
+temp2 = original_num
+
+no_of_digits = len(str(original_num))
+
+sum2 = 0
+
+while temp2 > 0:
+    digit = temp2 % 10
+    sum2 += digit ** no_of_digits
+    temp2 //= 10
+
+if sum2 == original_num:
+    print(f"Given number {original_num} is an Armstrong number")
+
+else:
+    print(f"Given number {original_num} is not an Armstrong number")
