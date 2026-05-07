@@ -2,18 +2,22 @@
 
 n_terms = int(input("Enter a Number : "))
 
-a = 0
-b = 1
+if n_terms <= 0:
+    print("Enter a valid Number")
 
-count = 0
+else:
+    a = 0
+    b = 1
 
-sum_of_series = 0
+    count = 0
 
-while count < n_terms:
-    sum_of_series += a
+    sum_of_series = 0
 
-    a, b = b, a + b
+    while count < n_terms:
+        sum_of_series += a
 
-    count += 1
+        a, b = b, a + b
 
-print(sum_of_series)
+        count += 1
+
+    print(sum_of_series)
