@@ -10,14 +10,14 @@ number = 3
 while number <= 100:
     is_prime = True
     limit = int(math.sqrt(number))
-    divisor = 2
+    divisor = 3
 
-    while divisor < limit:
+    while divisor <= limit:
         if number % divisor == 0:
             is_prime = False
             break
 
-        divisor += 1
+        divisor += 2
 
     if is_prime:
         print(number)
