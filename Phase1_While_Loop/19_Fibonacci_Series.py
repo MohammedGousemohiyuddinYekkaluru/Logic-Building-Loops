@@ -1,17 +1,20 @@
 # 19) Print the Fibonacci series up to n terms.
 
-
 starting_num = 0
 
-nth_term = 10
+nth_term = int(input("Enter n terms number : "))
 
-first_term = 0
+if nth_term <= 0:
+    print("Enter a valid number")
 
-second_term = 1
+else:
+    first_term = 0
 
-while starting_num < nth_term:
-    print(first_term)
+    second_term = 1
 
-    first_term, second_term = second_term, first_term + second_term
+    while starting_num < nth_term:
+        print(first_term)
 
-    starting_num += 1
+        first_term, second_term = second_term, first_term + second_term
+
+        starting_num += 1
