@@ -9,3 +9,10 @@ while a <= b:
         print(a)
 
     a += 1
+
+
+## Optimized Solution
+
+result_num = [i for i in range(a, b+1) if i % 7 == 0]
+
+print(*result_num)
