@@ -8,3 +8,9 @@ while start_num <= n_numbers:
     print(start_num ** 3)
 
     start_num += 1
+
+## Optimized Solution
+
+cubes = [i ** 3 for i in range(1, n_numbers+1)]
+
+print(cubes)
