@@ -11,3 +11,17 @@ while True:
     
     else:
         break
+
+
+## Proper do-while loop logic
+
+num = int(input("Enter a number"))
+
+i = 1
+
+while True:
+    print(f"{num} * {i} = {num * i}")
+    i += 1
+
+    if i > 10:
+        break
