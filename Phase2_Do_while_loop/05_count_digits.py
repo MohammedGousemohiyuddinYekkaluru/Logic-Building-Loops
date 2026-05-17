@@ -1,6 +1,6 @@
 # 5) Count digits in a number.
 
-num = 0
+num = int(input("Enter a number : "))
 
 temp = num
 
