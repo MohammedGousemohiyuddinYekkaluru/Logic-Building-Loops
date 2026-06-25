@@ -5,6 +5,7 @@ r_sum = 0
 while True:
 
     if r_sum > 100:
+        print("running sum exceeds 100")
         break
 
     else:
