@@ -8,3 +8,14 @@ for i in range(0, 5):
         print("*", end=" ")
 
     print()
+
+
+# Another way
+
+rows = 4
+
+for i in range(1, rows + 1):
+    print(" " * rows, end="")
+    print("* " * i)
+
+    rows -= 1
